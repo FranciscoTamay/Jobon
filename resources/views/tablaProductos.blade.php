@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- TOKEN -->
-    <meta name="token" id="token" value="{{ csrf_token() }}">
-    <!-- VUE JS -->
-    <script type="text/javascript" src="{{asset('js/vue.js')}}"></script>
-    <!-- API PRODUCTO JS -->
-    <script type="text/javascript" src="{{asset('js/apis/apiProducto.js')}}"></script>
-    <!-- VUE RESOURCE -->
-    <script type="text/javascript" src="{{asset('js/vue-resource.js')}}"></script>
-    <script src="js/JsBarcode.all.min.js"></script>
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/714fbe6707.js" crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="{{asset('js/jquery.min.js')}}"></script>
-    <!-- Bootstrap -->
-    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-    <script src="js/bootstrap.js"></script>
-    <!--  Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<title></title>
-</head>
-<body>
+
+
+@exends('layaout.master2')
 <div id="productos">
     <div class="container">
 <div class="row">
@@ -40,8 +17,6 @@
                     <th>SKU</th>
                     <th>NOMBRE</th>
                     <th>PRECIO PUBLICO</th>
-                    <!-- <th>PRECIO VETERINARIA</th> -->
-                    <th>PRECIO MAYOREO</th>
                     <th>CANTIDAD</th>
                    <!-- <th>BARCODE</th> -->
                     <th>ACCIONES</th>
@@ -137,17 +112,4 @@
  <!-- FIN DEL DIV.ROW -->
 
     
- <!-- <script type="text/javascript">
-
-
-  
-  JsBarcode("#barcode", "12345", {
-  format: "codabar",
-  lineColor: "#000",
-  width: 2,
-  height: 20,
-  displayValue: true
-});
-
-
-</script> -->
+ 
